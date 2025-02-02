@@ -7,6 +7,7 @@ package com.mycompany.cnc;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.math.BigDecimal;
+import java.util.Scanner;
 
 /**
  *
@@ -16,9 +17,13 @@ public class CNC {
 
     public static void main(String[] args) throws FileNotFoundException {
         
+        Scanner scanner = new Scanner(System.in);
+        UserInterface ui = new UserInterface();
+        ui.start();
+        
         PrintWriter writer = new PrintWriter("CnCcode.txt");
         
-        //tool call and changes to that tool
+        /*//tool call and changes to that tool
         writer.println("N1 T1 M06");
         //Moves tool to start location
         writer.println("N2 M03 S1000");
@@ -51,7 +56,7 @@ public class CNC {
         index++;
         writer.println("N" + index + " M30");
         writer.close();
-        System.out.println("Closed");
+        System.out.println("Closed");*/
 
         
     }

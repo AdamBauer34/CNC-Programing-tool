@@ -1,1 +1,5 @@
+com\mycompany\cnc\ProgramHeader.class
+com\mycompany\cnc\ToPrint.class
+com\mycompany\cnc\Drill.class
 com\mycompany\cnc\CNC.class
+com\mycompany\cnc\UserInterface.class
