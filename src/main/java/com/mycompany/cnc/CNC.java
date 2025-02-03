@@ -21,7 +21,7 @@ public class CNC {
         UserInterface ui = new UserInterface();
         ui.start();
         
-        PrintWriter writer = new PrintWriter("CnCcode.txt");
+        //PrintWriter writer = new PrintWriter("CnCcode.txt");
         
         /*//tool call and changes to that tool
         writer.println("N1 T1 M06");

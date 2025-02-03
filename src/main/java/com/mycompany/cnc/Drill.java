@@ -20,6 +20,7 @@ public class Drill {
     private double y;
     private double depth;
     private double peck;
+    private int toolnumber;
     
     public Drill(){
         this.diameter = diameter;
@@ -29,6 +30,15 @@ public class Drill {
         this.y = y;
         this.depth = depth;
         this.peck = peck;
+        this.toolnumber = toolnumber;
+    }
+
+    public void setToolnumber(int toolnumber) {
+        this.toolnumber = toolnumber;
+    }
+
+    public int getToolnumber() {
+        return toolnumber;
     }
     public void setDiameter(double diameter){
         this.diameter = diameter;
@@ -85,6 +95,10 @@ public class Drill {
 
     public double getPeck() {
         return peck;
+    }
+    
+    public String toString(){
+        return "Drill\n" + "g17g40g90\n" + "T" + getToolnumber() + "M6\ng0g54x" + getX() + "y" + getY() + "s" + getSpindle() + "m3\nz3.0m7\nf" + getFeed();
     }
     
     

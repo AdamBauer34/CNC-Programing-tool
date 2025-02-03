@@ -3,11 +3,32 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.cnc;
-
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.math.BigDecimal;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 /**
  *
  * @author AdamB
  */
 public class ToPrint {
+    private Drill drill;
+    
+    public ToPrint(){
+        
+    }
+    
+    public void setDrill(Drill drill){
+        this.drill = drill;
+    }
+    
+    public void printCode() throws FileNotFoundException{
+        try (PrintWriter writer = new PrintWriter("CnCcode.txt")) {
+            System.out.println(drill.toString());
+            writer.println(drill.toString());
+        }
+    }
     
 }
