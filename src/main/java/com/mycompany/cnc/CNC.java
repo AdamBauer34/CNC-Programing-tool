@@ -19,7 +19,10 @@ public class CNC {
         
         Scanner scanner = new Scanner(System.in);
         UserInterface ui = new UserInterface();
+        
         ui.start();
+        
+        Printable.closerWriter();
         
         //PrintWriter writer = new PrintWriter("CnCcode.txt");
         

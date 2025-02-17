@@ -25,6 +25,9 @@ public class ToPrint {
     }
     
     public void printCode() throws FileNotFoundException{
+        
+        //MAKE PrintWriter ITS OWN CLASS SO IT IS ACESSED OUTSIDE OF THE OTHER CLASSES AND WONT RESTART
+        
         try (PrintWriter writer = new PrintWriter("CnCcode.txt")) {
             System.out.println(drill.toString());
             writer.println(drill.toString());
