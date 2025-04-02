@@ -1,0 +1,52 @@
+.root {
+    prompt-colour: #a04000;
+    heading-colour: #000000;
+}
+
+.main-menu {
+    -fx-background-color: #4682B4;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-border-style: hidden none solid none;
+}
+
+.main-menu-text {
+    -fx-text-fill: black;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.left-menu-buttons {
+    -fx-background-color: #e7eff2;
+    -fx-border-color: black;
+    -fx-border-style: hidden solid hidden hidden;
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.right-menu-buttons {
+    -fx-background-color: #e7eff2;
+    -fx-border-color: black;
+    -fx-border-style: hidden hidden hidden solid;
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.center-menu-buttons {
+    -fx-background-color: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.input-menu {
+    -fx-text-fill: black;
+    -fx-font-size: 16px;
+}
+
+.title-names {
+    -fx-text-fill: black;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
